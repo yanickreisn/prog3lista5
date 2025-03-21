@@ -1,0 +1,13 @@
+# Função para calcular o fatorial de um número
+def fatorial(n):
+    if n == 0 or n == 1:  # Caso base
+        return 1
+    else:
+        return n * fatorial(n - 1)  # Recursão
+
+# Programa principal
+numero = int(input("Digite um número inteiro para calcular o fatorial: "))
+
+# Chama a função fatorial e exibe o resultado
+resultado = fatorial(numero)
+print(f'O fatorial de {numero} é: {resultado}')
